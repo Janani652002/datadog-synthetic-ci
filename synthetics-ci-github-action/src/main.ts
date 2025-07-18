@@ -15,10 +15,11 @@ const run = async (): Promise<void> => {
     core.info(`Type of summary: ${typeof summary}`)
     core.info(`Type of results: ${typeof results}`)
 
-    // console.log("🧪 Raw results:", results)
-    // console.log("🧪🧪 Raw summary:", summary)
+    console.log("Raw results:", results)
+    console.log("Raw summary:", summary)
+    console.log('checked')
 
-    // core.info(`Results Payload:\n${JSON.stringify(results.slice(0, 5), null, 2)}`)
+    core.info(`Results Payload:\n${JSON.stringify(results.slice(0, 5), null, 2)}`)
 
     const orgSettings = await synthetics.utils.getOrgSettings(reporter, config)
 
